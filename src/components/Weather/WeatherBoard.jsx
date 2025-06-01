@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { WeatherContext } from "../../context";
 import AddToFavourite from "./AddToFavourite";
 import WeatherCondition from "./WeatherCondition";
-import WeatherHeadLine from "./WeatherHeadline";
+import WeatherHeadLine from "./WeatherHeadLine";
 
 export default function WeatherBoard() {
   const { weatherData } = useContext(WeatherContext);
