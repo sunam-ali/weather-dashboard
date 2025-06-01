@@ -1,12 +1,39 @@
-# React + Vite
+# 🌦️ Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive Weather Dashboard built with **React**, providing real-time weather updates using a public API. Easily search for cities, view detailed weather data, and save your favorite locations with persistent local storage.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔍 City weather search with **debounced input**
+- 🌎 Display weather for **current location**
+- ❤️ Add/Remove cities from **favorites**
+- ☁️ Detailed weather info (temperature, humidity, wind speed, etc.)
+- 💾 **Persistent data** using local storage
+- ⚙️ Modular structure using **Context API** and **custom hooks**
 
-## Expanding the ESLint configuration
+## 🧰 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React**
+- **Context API** for state management
+- **Custom Hooks** for modular logic
+- **OpenWeatherMap API** for weather data
+- **CSS / Tailwind CSS** for styling and layouting
+
+## 🔧 Providers Used
+
+- **WeatherProvider** – fetches and shares weather data
+- **LocationProvider** – manages geolocation logic
+- **FavoriteProvider** – manages favorite cities and syncs with local storage
+
+## 🪝 Custom Hooks
+
+- `useDebounce` – debounces search input for better performance
+- `useLocalStorage` – persists data in browser's local storage
+- `useWeather` – handles API calls and returns structured weather data
+
+## 📦 Installation
+
+```bash
+git https://github.com/sunam-ali/weather-dashboard.git
+cd weather-dashboard
+npm install
